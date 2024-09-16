@@ -1,0 +1,51 @@
+package me.nettychannell.minigameapi.mini;
+
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
+import me.nettychannell.minigameapi.mini.countdown.Countdown;
+import me.nettychannell.minigameapi.mini.result.AddPlayerResult;
+import me.nettychannell.minigameapi.mini.result.RemovePlayerResult;
+import org.bukkit.entity.Player;
+
+//                                  GameState
+// DO NOT EXTEND THIS CLASS IN YOUR CODE
+@Setter @Getter
+public abstract class MinigameArena<T extends Enum<?>, E extends MinigameArena<?, ?>> {
+    private T gameState;
+    private final int minPlayers, maxPlayers, countdownTime;
+    private Countdown countdown;
+
+    /**
+     * MinigameArena Constructor
+     * @param minPlayers Minimum amount of players required to start the game, -1 for no minimum
+     * @param maxPlayers Maximum amount of players allowed in the game, -1 for no maximum
+     * */
+    public MinigameArena(int minPlayers, int maxPlayers, int countdownTime) {
+        this.gameState = getWaitingState();
+        this.minPlayers = minPlayers;
+        this.maxPlayers = maxPlayers;
+        this.countdownTime = countdownTime;
+        this.countdown = generateCountdown();
+    }
+
+    public abstract AddPlayerResult addPlayer(Player player);
+    public abstract RemovePlayerResult removePlayer(Player player);
+
+    public abstract T getWaitingState();
+
+    public abstract T getStartingState();
+
+    public abstract T getPlayingState();
+
+    public abstract T getEndingState();
+
+    public abstract E getMinigameArena();
+
+    public abstract Countdown generateCountdown();
+
+    public void stopCountdown() {
+        countdown.cancel();
+    }
+
+}

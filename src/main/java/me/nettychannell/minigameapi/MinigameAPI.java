@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface MinigameAPI {
 
-    default Minigame getInstance() {
+    static Minigame<?> getInstance() {
         return Minigame.getInstance();
     }
 

@@ -12,6 +12,6 @@ public interface ArenaListener {
 
     default void onCountdownStart(InternalArenaCountdownStartEvent e) {}
 
-    default void onCountdownStop(InternalArenaCountdownStopEvent) {}
+    default void onCountdownStop(InternalArenaCountdownStopEvent e) {}
 
 }

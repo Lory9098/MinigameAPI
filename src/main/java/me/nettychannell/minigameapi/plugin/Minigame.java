@@ -16,9 +16,9 @@ import java.util.logging.Level;
 //                    arena key type
 public class Minigame<K> implements MinigameAPI {
     @Getter
-    private static Minigame instance;
+    private static Minigame<?> instance;
     private final JavaPlugin plugin;
-    private final MinigameService minigameService;
+    private final MinigameService<K> minigameService;
     @Setter
     private boolean debug;
 
@@ -26,7 +26,7 @@ public class Minigame<K> implements MinigameAPI {
         instance = this;
         this.plugin = plugin;
         this.debug = debug;
-        this.minigameService = new MinigameService<K>();
+        this.minigameService = new MinigameService<>();
     }
 
     @Override

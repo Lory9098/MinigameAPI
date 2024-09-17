@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d557823-4950-48b8-b04a-926bcb3a946f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/service/ScoreboardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/service/MinigameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/service/MinigameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/plugin/Minigame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/plugin/Minigame.java" afterDir="false" />
-    </list>
+    <list default="true" id="2d557823-4950-48b8-b04a-926bcb3a946f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +129,7 @@
       <workItem from="1726486689559" duration="9837000" />
       <workItem from="1726506500971" duration="1427000" />
       <workItem from="1726507965373" duration="645000" />
-      <workItem from="1726568815958" duration="6063000" />
+      <workItem from="1726568815958" duration="6372000" />
     </task>
     <servers />
   </component>

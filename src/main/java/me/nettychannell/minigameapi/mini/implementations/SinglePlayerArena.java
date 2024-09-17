@@ -11,14 +11,8 @@ import me.nettychannell.minigameapi.mini.result.RemovePlayerResult;
 import me.nettychannell.minigameapi.plugin.Minigame;
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-
 //                                      GameState,         MinigameArena
 public abstract class SinglePlayerArena<T extends Enum<?>, E extends MinigameArena<?, ?>> extends MinigameArena<T, E> {
-    private final List<UUID> players;
-
     /**
      * SinglePlayerArena Constructor
      * @param minPlayers Minimum amount of players required to start the game, -1 for no minimum
@@ -26,7 +20,6 @@ public abstract class SinglePlayerArena<T extends Enum<?>, E extends MinigameAre
      * */
     public SinglePlayerArena(int minPlayers, int maxPlayers, int countdownTime) {
         super(minPlayers, maxPlayers, countdownTime);
-        this.players = new ArrayList<>();
         setGameState(getWaitingState());
     }
 
@@ -52,7 +45,7 @@ public abstract class SinglePlayerArena<T extends Enum<?>, E extends MinigameAre
             }
 
             if (getMaxPlayers() != -1) {
-                if (players.size() >= getMaxPlayers()) {
+                if (getPlayers().size() >= getMaxPlayers()) {
                     if (getMinigameArena() instanceof ArenaListener) {
                         ArenaListener listener = (ArenaListener) getMinigameArena();
                         InternalArenaFullEvent e = new InternalArenaFullEvent(player);
@@ -62,9 +55,9 @@ public abstract class SinglePlayerArena<T extends Enum<?>, E extends MinigameAre
                 }
             }
 
-            players.add(player.getUniqueId());
+            getPlayers().add(player.getUniqueId());
 
-            if (getMinPlayers() != -1 && players.size() >= getMinPlayers() && getGameState() == getWaitingState()) {
+            if (getMinPlayers() != -1 && getPlayers().size() >= getMinPlayers() && getGameState() == getWaitingState()) {
                 if (getMinigameArena() instanceof ArenaListener) {
                     ArenaListener arenaListener = (ArenaListener) getMinigameArena();
 
@@ -104,9 +97,9 @@ public abstract class SinglePlayerArena<T extends Enum<?>, E extends MinigameAre
                 return new RemovePlayerResult(RemovePlayerResult.RemovePlayerResultType.CANCELLED, null);
             }
 
-            players.remove(player.getUniqueId());
+            getPlayers().remove(player.getUniqueId());
 
-            if (getMinPlayers() != -1 && players.size() < getMinPlayers() && getGameState() == getStartingState()) {
+            if (getMinPlayers() != -1 && getPlayers().size() < getMinPlayers() && getGameState() == getStartingState()) {
                 stopCountdown();
             }
 

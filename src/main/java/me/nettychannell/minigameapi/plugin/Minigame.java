@@ -19,12 +19,11 @@ import java.util.Optional;
 import java.util.logging.Level;
 
 @Getter
-//                    K = arena key type
-public class Minigame<K> implements MinigameAPI {
+public class Minigame implements MinigameAPI {
     @Getter
-    private static Minigame<?> instance;
+    private static Minigame instance;
     private final JavaPlugin plugin;
-    private final MinigameService<K> minigameService;
+    private final MinigameService minigameService;
     @Setter
     private boolean debug, luckPermsSupport, placeholderSupport;
     private @Nullable ScoreboardSkull<?> scoreboard;
@@ -33,7 +32,7 @@ public class Minigame<K> implements MinigameAPI {
         instance = this;
         this.plugin = plugin;
         this.debug = debug;
-        this.minigameService = new MinigameService<>();
+        this.minigameService = new MinigameService();
 
         if (!plugin.getServer().getPluginManager().isPluginEnabled("LuckPerms")) {
             if (debug) {

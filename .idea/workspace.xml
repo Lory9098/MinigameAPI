@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d557823-4950-48b8-b04a-926bcb3a946f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/ScoreboardSkull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/implementation/NeznamyScoreboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/service/ScoreboardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/type/ScoreboardType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/MinigameAPI.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/MinigameAPI.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/MinigameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/MinigameAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/MinigameArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/MinigameArena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/implementations/SinglePlayerArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/implementations/SinglePlayerArena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/service/ScoreboardService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/service/MinigameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/service/MinigameService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/plugin/Minigame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/plugin/Minigame.java" afterDir="false" />
     </list>
@@ -147,7 +134,7 @@
       <workItem from="1726486689559" duration="9837000" />
       <workItem from="1726506500971" duration="1427000" />
       <workItem from="1726507965373" duration="645000" />
-      <workItem from="1726568815958" duration="3996000" />
+      <workItem from="1726568815958" duration="6063000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ import me.clip.placeholderapi.PlaceholderAPI;
 import me.nettychannell.minigameapi.MinigameAPI;
 import me.nettychannell.minigameapi.mini.scoreboard.ScoreboardSkull;
 import me.nettychannell.minigameapi.mini.service.MinigameService;
+import me.nettychannell.minigameapi.task.handler.TaskHandler;
 import me.nettychannell.minigameapi.utils.ChatUtil;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
@@ -24,30 +25,40 @@ public class Minigame implements MinigameAPI {
     private static Minigame instance;
     private final JavaPlugin plugin;
     private final MinigameService minigameService;
+    private final TaskHandler<JavaPlugin> taskHandler;
     @Setter
     private boolean debug, luckPermsSupport, placeholderSupport;
     private @Nullable ScoreboardSkull<?> scoreboard;
 
-    public Minigame(JavaPlugin plugin, boolean debug) {
+    public static MinigameAPIBuilder builder(JavaPlugin plugin) {
+        return new MinigameAPIBuilder(plugin);
+    }
+
+    Minigame(JavaPlugin plugin, boolean debug, @Nullable ScoreboardSkull<?> scoreboard, @Nullable String tasksDirectory) {
         instance = this;
         this.plugin = plugin;
         this.debug = debug;
         this.minigameService = new MinigameService();
+        this.taskHandler = TaskHandler.create(plugin);
 
-        if (!plugin.getServer().getPluginManager().isPluginEnabled("LuckPerms")) {
-            if (debug) {
-                plugin.getLogger().log(Level.INFO, ChatUtil.color("&b[MinigamesAPI] &cLuckPerms not found, support disabled!"));
-            }
-        } else {
-            plugin.getLogger().log(Level.INFO, ChatUtil.color("&b[MinigamesAPI] &aLuckPerms found, support enabled!"));
+        if (tasksDirectory != null) taskHandler.registerAll(tasksDirectory);
+
+        if (scoreboard != null) this.enableScoreboard(scoreboard);
+
+        loadDependency("LuckPerms");
+        loadDependency("PlaceholderAPI");
+
+    }
+
+    public void loadDependency(String dependency) {
+        if (plugin.getServer().getPluginManager().isPluginEnabled(dependency)) {
+            plugin.getLogger().log(Level.INFO, ChatUtil.color("&b[MinigamesAPI] &a" + dependency + " found, support enabled!"));
+            return;
         }
-        if (!plugin.getServer().getPluginManager().isPluginEnabled("PlaceholderAPI")) {
-            if (debug) {
-                plugin.getLogger().log(Level.INFO, ChatUtil.color("&b[MinigamesAPI] &cPlaceholderAPI not found, support disabled!"));
-            }
-        } else {
-            plugin.getLogger().log(Level.INFO, ChatUtil.color("&b[MinigamesAPI] &aPlaceholderAPI found, support enabled!"));
-        }
+
+        if (!debug) return;
+
+        plugin.getLogger().log(Level.INFO, ChatUtil.color("&b[MinigamesAPI] &c" + dependency + " not found, support disabled!"));
     }
 
     @Override

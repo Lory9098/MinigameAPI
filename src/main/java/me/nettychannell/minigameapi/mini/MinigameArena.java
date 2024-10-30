@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 import me.nettychannell.minigameapi.mini.countdown.Countdown;
+import me.nettychannell.minigameapi.mini.listener.ArenaListener;
 import me.nettychannell.minigameapi.mini.result.AddPlayerResult;
 import me.nettychannell.minigameapi.mini.result.RemovePlayerResult;
 import me.nettychannell.minigameapi.mini.scoreboard.ScoreboardSkull;
@@ -53,6 +54,15 @@ public abstract class MinigameArena<T extends Enum<?>, E extends MinigameArena<?
 
     public void stopCountdown() {
         countdown.cancel();
+    }
+
+    public void start() {
+        setGameState(getPlayingState());
+
+        if (getMinigameArena() instanceof ArenaListener) {
+            ArenaListener listener = (ArenaListener) getMinigameArena();
+            listener.onArenaStart();
+        }
     }
 
 }

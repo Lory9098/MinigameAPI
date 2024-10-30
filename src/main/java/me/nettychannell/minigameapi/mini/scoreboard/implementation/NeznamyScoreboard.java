@@ -35,6 +35,10 @@ public abstract class NeznamyScoreboard<T extends Enum<?>> extends ScoreboardSku
         String title = getTitle(state);
         List<String> lines = getLines(state);
 
+        for (int i = 0; i < lines.size(); i++) {
+            lines.set(i, ChatUtil.color(lines.get(i)));
+        }
+
         if (MinigameAPI.getInstance().isPlaceholderSupport()) {
             title = MinigameAPI.getInstance().parse(player, title).get();
             lines = MinigameAPI.getInstance().parse(player, lines).get();

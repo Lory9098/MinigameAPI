@@ -18,7 +18,9 @@ public abstract class Countdown extends BukkitRunnable {
     public void run() {
         remainingTime--;
         if (remainingTime <= 0) {
+            arena.start();
             cancel();
+            return;
         }
         handle();
     }

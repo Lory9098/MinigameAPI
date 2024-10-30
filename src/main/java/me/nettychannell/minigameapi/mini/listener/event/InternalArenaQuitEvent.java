@@ -2,6 +2,8 @@ package me.nettychannell.minigameapi.mini.listener.event;
 
 import lombok.Getter;
 import lombok.Setter;
+import me.nettychannell.minigameapi.MinigameAPI;
+import me.nettychannell.minigameapi.plugin.Minigame;
 import org.bukkit.entity.Player;
 
 @Getter @Setter
@@ -15,6 +17,9 @@ public class InternalArenaQuitEvent {
         this.player = player;
         this.joinTime = joinTime;
         this.cancelled = false;
+        Minigame.builder()
+                .setDebug(true)
+                ;
     }
 
 }

@@ -18,6 +18,7 @@ import java.util.UUID;
 // DO NOT EXTEND THIS CLASS IN YOUR CODE
 @Setter @Getter
 public abstract class MinigameArena<T extends Enum<?>, E extends MinigameArena<?, ?>> {
+    private int id;
     private T gameState;
     private final int minPlayers, maxPlayers, countdownTime;
     private Countdown countdown;
@@ -28,7 +29,8 @@ public abstract class MinigameArena<T extends Enum<?>, E extends MinigameArena<?
      * @param minPlayers Minimum amount of players required to start the game, -1 for no minimum
      * @param maxPlayers Maximum amount of players allowed in the game, -1 for no maximum
      * */
-    public MinigameArena(int minPlayers, int maxPlayers, int countdownTime) {
+    public MinigameArena(int id, int minPlayers, int maxPlayers, int countdownTime) {
+        this.id = id;
         this.gameState = getWaitingState();
         this.minPlayers = minPlayers;
         this.maxPlayers = maxPlayers;

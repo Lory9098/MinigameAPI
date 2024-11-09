@@ -8,10 +8,12 @@ import org.bukkit.entity.Player;
 public class InternalArenaJoinEvent {
 
     private boolean cancelled;
+    private final int arenaId;
     private final Player player;
     private final long joinTime;
 
-    public InternalArenaJoinEvent(Player player, long joinTime) {
+    public InternalArenaJoinEvent(int arenaId, Player player, long joinTime) {
+        this.arenaId = arenaId;
         this.player = player;
         this.joinTime = joinTime;
         this.cancelled = false;

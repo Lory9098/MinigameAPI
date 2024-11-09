@@ -4,12 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.entity.Player;
 
-@Getter @Setter
+@Getter
 public class InternalArenaFullEvent {
 
+    private final int arenaId;
     private final Player player;
 
-    public InternalArenaFullEvent(Player player) {
+    public InternalArenaFullEvent(int arenaId, Player player) {
+        this.arenaId = arenaId;
         this.player = player;
     }
 

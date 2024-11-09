@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d557823-4950-48b8-b04a-926bcb3a946f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/plugin/MinigameAPIBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/task/handler/TaskHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/nettychannell/minigameapi/mini/MinigameArena.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/nettychannell/minigameapi/mini/MinigameArena.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/nettychannell/minigameapi/mini/countdown/Countdown.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/nettychannell/minigameapi/mini/countdown/Countdown.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/nettychannell/minigameapi/mini/listener/ArenaListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/nettychannell/minigameapi/mini/listener/ArenaListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/MinigameAPI-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Minigame.class.uniqueId3" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Minigame.class.uniqueId3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MinigameAPI.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MinigameService.class.uniqueId6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NeznamyScoreboard.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ScoreboardService.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ScoreboardSkull.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SinglePlayerArena.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/MinigameArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/MinigameArena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/countdown/Countdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/countdown/Countdown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/listener/ArenaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/listener/ArenaListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/listener/event/InternalArenaQuitEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/listener/event/InternalArenaQuitEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/implementation/NeznamyScoreboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/mini/scoreboard/implementation/NeznamyScoreboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/plugin/Minigame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/nettychannell/minigameapi/plugin/Minigame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,21 +68,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Personal (since 18-02)/robe mie/MinigameAPI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Personal (since 18-02)/robe mie/MinigameAPI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Personal (since 18-02)\robe mie\MinigameAPI\libs" />
@@ -175,6 +148,11 @@
       <workItem from="1727960001744" duration="598000" />
       <workItem from="1728204256504" duration="291000" />
       <workItem from="1730330956893" duration="17000" />
+      <workItem from="1730382994420" duration="598000" />
+      <workItem from="1730646496775" duration="44000" />
+      <workItem from="1730672593162" duration="599000" />
+      <workItem from="1730735130598" duration="1202000" />
+      <workItem from="1730814158596" duration="598000" />
     </task>
     <servers />
   </component>

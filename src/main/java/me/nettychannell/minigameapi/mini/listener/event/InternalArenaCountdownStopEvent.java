@@ -6,11 +6,13 @@ import org.bukkit.entity.Player;
 @Getter
 public class InternalArenaCountdownStopEvent {
     private boolean cancelled = false;
+    private final int arenaId;
     private final CountdownStopCause cause;
     // if cause is MIN_PLAYERS_REACHED, this will be the player that quitted
     private final Player player;
 
-    public InternalArenaCountdownStopEvent(CountdownStopCause cause, Player player) {
+    public InternalArenaCountdownStopEvent(int arenaId, CountdownStopCause cause, Player player) {
+        this.arenaId = arenaId;
         this.cause = cause;
         this.player = player;
     }

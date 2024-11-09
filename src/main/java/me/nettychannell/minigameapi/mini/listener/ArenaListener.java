@@ -16,4 +16,6 @@ public interface ArenaListener {
 
     default void onArenaStart() {}
 
+    default void onServerChoosedBialPlayerPair(ServerChosedBialPlayerPairEvent e) {}
+
 }

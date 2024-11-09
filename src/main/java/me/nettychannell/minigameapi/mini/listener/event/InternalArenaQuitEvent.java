@@ -10,16 +10,15 @@ import org.bukkit.entity.Player;
 public class InternalArenaQuitEvent {
 
     private boolean cancelled;
+    private final int arenaId;
     private final Player player;
     private final long joinTime;
 
-    public InternalArenaQuitEvent(Player player, long joinTime) {
+    public InternalArenaQuitEvent(int arenaId, Player player, long joinTime) {
+        this.arenaId = arenaId;
         this.player = player;
         this.joinTime = joinTime;
         this.cancelled = false;
-        Minigame.builder()
-                .setDebug(true)
-                ;
     }
 
 }
